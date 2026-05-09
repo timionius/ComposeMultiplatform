@@ -1,0 +1,43 @@
+# --- Gradle and General Build ---
+.gradle
+**/build/
+local.properties
+.bundle/
+
+# --- Kotlin Multiplatform & Native ---
+.konan/
+.kotlin/
+
+# --- Android ---
+*.apk
+*.aar
+*.ap_
+*.dex
+.navigation/
+captures/
+output.json
+
+# --- iOS (Xcode & CocoaPods) ---
+*.xcworkspace
+*.xcodeproj
+*.podspec
+Pods/
+.metadata/
+derivedData/
+
+# --- IntelliJ / Android Studio ---
+.idea/
+*.iml
+*.iws
+.project
+.settings/
+.classpath
+out/
+
+# --- OS Specific ---
+.DS_Store
+Thumbs.db
+
+# --- Compose Desktop ---
+dist/
+

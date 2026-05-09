@@ -1,0 +1,33 @@
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+indent_style = space
+indent_size = 4
+trim_trailing_whitespace = true
+
+[*.{kt,kts}]
+# 1. Compose Naming Rules
+# Allows @Composable fun MyUI() { ... }
+ktlint_function_naming_ignore_when_annotated_with = Composable
+
+# 2. General Kotlin Style
+ij_kotlin_allow_trailing_comma = true
+ij_kotlin_allow_trailing_comma_on_call_site = true
+
+# 3. Import Management
+# Prevents '*' imports which are often flagged in linting
+ij_kotlin_name_count_to_use_star_import = 99
+ij_kotlin_name_count_to_use_star_import_for_members = 99
+
+# 4. Max Line Length (standard is usually 120)
+max_line_length = 120
+
+[*.xml]
+indent_size = 4
+
+[*.{yml,yaml}]
+indent_size = 2
+[*.{kt,kts}]
