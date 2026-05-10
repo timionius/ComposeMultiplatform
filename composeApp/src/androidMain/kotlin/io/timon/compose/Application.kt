@@ -4,7 +4,9 @@ import android.app.Application
 import io.timon.android.pixelsampler.PixelSampler
 
 class Application : Application() {
-    init {
-        PixelSampler.init()
+    companion object {
+        init {
+            PixelSampler.init()
+        }
     }
 }
